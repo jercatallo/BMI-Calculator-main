@@ -1,0 +1,157 @@
+//Main Colors
+$color1: #D6D6D6;
+$color2: #8C8C8C;
+$color3: #44444C;
+$color4: #0B0909;
+
+
+
+//Width per Devices
+
+@mixin overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+$smallerscreen: 700px;
+
+//Media Queries
+@mixin smaller-screens {
+    @media (max-width: #{$smallerscreen}) {
+        @content;
+    }
+}
+
+
+.about-body{
+    height:100%;
+    width:100%;
+    background: linear-gradient(
+        rgba(43, 53, 88, 0.8),  
+        rgba(43, 53, 88, 0.8)
+    ),
+    url(images/nature_lake_winter_snow_84271_1024x768.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+.main-about {
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color:$color1;
+    height:100vh;
+    width:auto; 
+
+    @include smaller-screens {
+        grid-template-columns: 1fr;
+        margin:25% 10% 0% 10%;
+        
+    }
+    
+  
+    .main-about__informations {
+        margin-left:1em;
+
+
+        h1{
+            font-size:3em;
+        }
+    }
+    .main-about__image {
+        width:200px;
+        height:auto;
+        margin:2em;
+        box-shadow: 10px 10px 3px black;
+
+        @include smaller-screens {
+            line-height: 1.5em;
+            margin:50px auto;
+            
+        }
+
+    }
+
+    .main-about--details {
+        line-height:3em;
+        margin-left:1.2em;
+        padding-top:1.0em;
+
+        @include smaller-screens {
+            line-height: 1em;
+            padding-top:0em;
+            margin: 0 1em 0 -2em ;
+        }
+
+        p {
+            line-height: 2em;
+
+            @include smaller-screens {
+                line-height: 1.5em;
+                
+            }
+        }
+    }
+
+
+    .main-about__name {
+        border-bottom: 1px solid rgb(38, 170, 223);
+        padding:0.9em 0;
+        word-wrap:break-word;
+
+        @include smaller-screens {
+            font-size:0.7em;
+            margin-left:-3.5em;
+            margin-top: 7rem;
+            
+        }
+
+        &:hover {
+            border-bottom: 1px solid lighten(rgb(38, 170, 223),10%  )
+        }
+
+        .main-about__name--text {
+            margin:0;
+            display:inline;
+
+            
+            &:hover {
+                color:white;
+            }
+        
+        }
+    }
+
+    
+}
+
+
+
+.button__learnmore {
+    border:2px solid black;
+    border-radius: 2px;
+    padding:2px 10px;
+    background-color:$color3;
+    display:inline-block;
+    padding:5px;
+
+    &:hover {
+        color:$color1;
+        background-color:$color4;
+    }
+}
+
+a{
+    color:$color1;
+    text-decoration: none;
+}
