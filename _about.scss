@@ -108,6 +108,7 @@ $smallerscreen: 700px;
         border-bottom: 1px solid rgb(38, 170, 223);
         padding:0.9em 0;
         word-wrap:break-word;
+        font-family: "Roboto Light";
 
         @include smaller-screens {
             font-size:0.7em;
