@@ -85,6 +85,7 @@
   border-bottom: 1px solid #26aadf;
   padding: 0.9em 0;
   word-wrap: break-word;
+  font-family: "Roboto Light";
 }
 
 @media (max-width: 700px) {
@@ -151,7 +152,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: "Times New Roman";
+  font-family: "Roboto Thin";
 }
 
 label {
@@ -214,6 +215,11 @@ header.main div#brandname a:hover, header.main div#brandname:hover {
   color: rgba(180, 245, 240, 0.9);
 }
 
+header.main ul {
+  font-family: "Roboto Medium";
+  font-size: .9em;
+}
+
 @media (max-width: 625px) {
   header.main ul {
     padding: 5px;
@@ -228,7 +234,7 @@ header.main ul li a,
 header.main ul li a:active {
   color: #2ceef0;
   text-decoration: none;
-  padding: 15px;
+  padding: 1em;
 }
 
 @media (max-width: 625px) {
