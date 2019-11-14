@@ -1,0 +1,11 @@
+$maincolors: (
+  primarycolor1: #164227,
+  primarycolor2: #2B824C,
+  secondarycolor1: #40C272,
+  secondarycolor2: #44CF79,
+  alphaprimarycolor1: rgba(4, 31, 96, 0.7),
+  alphaprimarycolor2: rgba(4, 118, 208, 0.9),
+  alpha2primarycolor2: rgba(4, 118, 208, 0.7),
+  alphasecondarycolor1: rgba(44, 238, 240, 0.9),
+  alphasecondarycolor2: rgba(180, 245, 240, 0.9)
+);
