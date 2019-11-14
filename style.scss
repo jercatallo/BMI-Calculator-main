@@ -4,10 +4,10 @@
 
 
 $maincolors: (
-  primarycolor1: #041f60,
-  primarycolor2: #0476d0,
-  secondarycolor1: #2ceef0,
-  secondarycolor2: #b4f5f0,
+  primarycolor1: black,
+  primarycolor2: black,
+  secondarycolor1: white,
+  secondarycolor2: white,
   alphaprimarycolor1: rgba(4, 31, 96, 0.7),
   alphaprimarycolor2: rgba(4, 118, 208, 0.9),
   alpha2primarycolor2: rgba(4, 118, 208, 0.7),
@@ -142,10 +142,10 @@ section.main {
   > div {
     padding: 15px;
     margin: 2px;
-    background-color: color(alphaprimarycolor2);
+    background-color: black;
     color: white;
-    border: 1px solid color(secondarycolor2);
-    border-radius: 2px;
+  
+   
   }
 
   .sec-div1 {
@@ -221,7 +221,7 @@ section.main {
     background-image: url(images/time-for-war-M-new-video-simple-750x400.jpg);
     background-size: cover;
     border: 2px solid color(secondarycolor1);
-    border-radius: 4px;
+
     transition: 1s;
     height: 300px;
     grid-column: 1 / span 2;
